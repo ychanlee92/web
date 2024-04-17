@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+}
+.div1{
+    margin-top: 25px;
+    width: 1920px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.div1left{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    left: 300px;
+}
+.bar, .pay{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-left: 25px;
+}
+.div1right{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 300px;
+}
+.talk, .bell{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-right: 25px;
+}
+.div2{
+    margin-top: 10px;
+    width: 1920px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.div2left{
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    display: flex;
+}
+.div2right{
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    position: relative;
+    right: 330px;
+}
