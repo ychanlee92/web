@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>로그인폼</h1>
+    <hr />
+    <form
+      action="loginRegister.jsp"
+      method="post"
+      style="border: 2px solid black; padding: 5px"
+    >
+      <label for="userId">사용자 ID</label>
+      <input
+        type="text"
+        id="userId"
+        name="userId"
+        placeholder="사용자 이름을 입력하세요."
+        size="20"
+        maxlength="8"
+        required
+      />
+      <br />
+      <label for="userPw">비밀번호&nbsp;</label>
+      <input
+        type="password"
+        id="userPw"
+        name="userPw"
+        placeholder="비밀번호를 입력하세요."
+        size="20"
+        maxlength="8"
+        required
+      />
+      <br />
+      <label for="nation">나라</label>
+      <input type="text" name="nation" id="nation" list="nationList" />
+      <datalist id="nationList">
+        <option value="가나">가나</option>
+        <option value="스위스">스위스</option>
+        <option value="브라질">브라질</option>
+      </datalist>
+      <br />
+      <input type="radio" name="china" id="china1" value="1" />
+      <label for="china1"
+        >짜장면 <img src="../소스/3/media/jajang.png" alt=""
+      /></label>
+      <input type="radio" name="china" id="china2" value="2" />
+      <label for="china2"
+        >짬뽕 <img src="../소스/3/media/jjambbong.png" alt=""
+      /></label>
+      <input type="radio" name="china" id="china3" value="3" />
+      <label for="china3"
+        >탕수육 <img src="../소스/3/media/tangsuyuk.png" alt=""
+      /></label>
+      <br />
+      <label for="china1">음식선택</label>
+      <select name="china1" id="china1">
+        <option value="1">짜장면</option>
+        <option value="2">짬뽕</option>
+        <option value="3" selected>탕수육</option>
+      </select>
+      <br />
+      <label for="bodycolor">색상 선택하면 배경색 변경</label>
+      <input
+        type="color"
+        name="bodycolor"
+        id="bodycolor"
+        value="#ff0000"
+        onchange="document.body.style.color=this.value"
+      />
+      <input type="submit" value="전송" />
+    </form>
+    <form action="https://search.naver.com/search.naver" method="get">
+      <label for="querry">네이버에 보낼 검색내용</label>
+      <input
+        type="text"
+        name="querry"
+        id="querry"
+        size="20"
+        maxlength="20"
+        placeholder="질문 입력"
+        required
+      />
+      <input type="submit" value="전송" />
+      <button type="submit">
+        <img src="../소스/3/media/button.png" alt="" />
+      </button>
+    </form>
+  </body>
+</html>

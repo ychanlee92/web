@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a3088bf1ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend style="margin: 0 auto; border: 1px solid white">로그인</legend>
+        <div style="display: flex; justify-content: center">
+          <input type="radio" name="user" id="user1" />
+          <label for="user1">회원</label>
+          <input type="radio" name="user" id="user2" />
+          <label for="user2">비회원(주문조회)</label><br />
+        </div>
+        <div style="display: flex; justify-content: center">
+          <div>
+            <input type="id" name="id" id="id" placeholder="아이디" /><br />
+            <input type="id" name="id" id="id" placeholder="비밀번호" />
+          </div>
+          <div>
+            <input
+              style="
+                background-color: red;
+                color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                margin: auto;
+                width: 70px;
+                height: 48px;
+              "
+              type="button"
+              value="로그인"
+            />
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <input
+            style="accent-color: red"
+            type="checkbox"
+            name="id1"
+            id="id1"
+          />
+          <label for="id1">아이디저장</label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="http://">OTP 로그인</a>
+          <input type="button" value="?" />
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 10px">
+          <input type="button" value="회원가입" />&nbsp;
+          <input type="button" value="아이디 찾기" />&nbsp;
+          <input type="button" value="비밀번호 찾기" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

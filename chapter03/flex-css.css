@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  padding-left: 10px;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid black;
+  background-color: peachpuff;
+}
+.item{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+.item1{
+  background-color: rgb(0, 255, 0);
+  align-self: center;
+}
+.item2{
+  background-color: rgb(255, 230, 0);
+}
+.item3{
+  background-color: rgb(255, 0, 0);
+  order: 3;
+}

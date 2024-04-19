@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  text-align: center;
+}
+.form1{
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}
+th{
+  font-size: 13px;
+  width: 12%;
+  height: 70px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-left: 1px solid white;
+}
+table{
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  padding: 10px;
+  font-size: 12px;
+  margin: auto 0;
+}
+tr,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-right: 1px solid white;
+}
+input{
+  margin-top: 3px;
+  background-image: url(../wrest.gif);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #f4f4f4;
+  border: 1px solid lightgray;
+  font-size: 14px;
+}
+h4{margin-bottom: 20px;}
+.form2{
+  width: 80%;
+  height: 725px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.address{
+  height: 100px;
+}
+.form3{
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}

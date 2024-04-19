@@ -1,0 +1,34 @@
+      .header, .footer {
+        width: 90%;
+        height: 100px;
+        color: red;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+      .nav{
+        float: left;
+        background-color: greenyellow;
+        width: 10%;
+        height: 400px;
+        margin-left: 5%;
+        color: blue;
+      }
+      .section{
+        float: left;
+        width: 70%;
+        height: 400px;
+        background-color: lightpink;
+        color: honeydew;
+      }
+      .aside{
+        float: left;
+        width: 10%;
+        height: 400px;
+        background-color: orange;
+      }
+      .footer{
+        clear: both;
+      }
+      body {
+        margin: 0;
+      }

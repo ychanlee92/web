@@ -1,0 +1,87 @@
+a{
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+}
+
+header{
+  width: 80%;
+  
+  border: 1px dotted black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
+header>ul.nav-menu{
+  display: none;
+  list-style: none;
+}
+.nav-menu>li{
+  padding: 5px 5px;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+ul.nav-menu>li:hover{
+  background-color: red;
+  border-radius: 12px;
+}
+ul.nav-menu>li:hover>a{
+color: yellow;
+}
+header>.nav-logo{
+  font-size: 24px;
+}
+header>.nav-logo>i{
+  color: orange;
+}
+header>.nav-logo>i:hover{
+  color: white;
+}
+header>.nav-logo>a:hover{
+  color: orange;
+}
+header>.nav-icon{
+  padding-right: 10px;
+  color: white;
+}
+header>.nav-icon>i:hover{
+  color: orange;
+}
+header>a.nav-toggle{
+  display: none;
+}
+@media screen and (max-width: 800px){
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  header>.nav-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  header>ul>li{
+    width: 98%;
+    text-align: center;
+  }
+  header>.nav-icon{
+    width: 100%;
+    text-align: center;
+  }
+  header>a.nav-toggle{
+    display:block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  header>ul.nav-menu.active{
+    display: flex;
+  }
+}
