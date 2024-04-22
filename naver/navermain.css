@@ -121,9 +121,9 @@ input::placeholder{
   margin-right: 17px;
   margin-top: 17px;
 }
-.totaldiv>.div4>.div41>.div412>.div4121>.div412a>span>a{
+.totaldiv>.div4>.div41>.div412>.div412a>.div4121>span>a{
   color: rgb(138, 138, 138);
-  margin: 0 2px;
+  margin: auto 2px;
 }
 .totaldiv>.div4>.div41>.div412>.div412a{
   display: flex;
@@ -133,4 +133,7 @@ input::placeholder{
   width: 100%;
   height: 50px;
   border: 1px solid black;
+  margin: 20px 17px;
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245);
 }
