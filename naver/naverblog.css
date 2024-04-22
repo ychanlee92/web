@@ -11,10 +11,8 @@ body{
 li{
     list-style-type: none;
     padding-top: 10px;
-    position: relative
-    ;
+    position: relative;
     right: 15px;
-
 }
 li>a>img{
     position: relative;

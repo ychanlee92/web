@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: 60%;
+        margin: 0 auto;
+      }
+      label {
+        display: inline-block;
+        width: 80px;
+      }
+      legend {
+        text-align: center;
+      }
+      input[type="text"] {
+        border: 2px solid slateblue;
+      }
+      input:focus {
+        outline: 1px soild red;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <hr />
+    <form action="#" method="post">
+      <fieldset>
+        <legend>회원 정보 입력</legend>
+        <label for="name"> 이름 :</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          size="20"
+          maxlength="4"
+          placeholder="이름 입력"
+        />
+        <br />
+        <label for="userId"> ID :</label>
+        <input
+          type="text"
+          name="userId"
+          id="userId"
+          size="20"
+          maxlength="8"
+          placeholder="ID 입력"
+        />
+        <br />
+        <label for="userPassword"> 비밀번호 :</label>
+        <input
+          type="password"
+          name="userPassword"
+          id="userPassword"
+          size="20"
+          maxlength="10"
+          placeholder="비밀번호 입력"
+        />
+      </fieldset>
+    </form>
+  </body>
+</html>

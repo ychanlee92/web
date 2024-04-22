@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      legend {
+        text-align: center;
+      }
+      label {
+        display: inline-block;
+        width: 80px;
+        padding: 3px 0;
+      }
+      form {
+        margin: 0 auto;
+        width: 50%;
+      }
+      form {
+        border: 2px dotted rgb(255, 0, 43);
+      }
+      input[type="text"] {
+        border: 1px solid palevioletred;
+      }
+      input {
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      input:focus {
+        outline: 1px solid blue;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <hr />
+    <form action="#" method="post">
+      <fieldset>
+        <legend>회원 정보 입력</legend>
+        <label for="name">이름: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          size="20"
+          maxlength="4"
+          placeholder="이름을 입력하세요."
+        />
+        <br />
+        <label for="userId">아이디: </label>
+        <input
+          type="text"
+          name="userId"
+          id="userId"
+          size="20"
+          maxlength="10"
+          placeholder="아이디를 입력하세요."
+        />
+        <br />
+        <label for="userPassword">비밀번호: </label>
+        <input
+          type="password"
+          name="userPassword"
+          id="userPassword"
+          size="20"
+          maxlength="11"
+          placeholder="비밀번호를 입력하세요."
+        />
+      </fieldset>
+      <fieldset>
+        <legend>주소 등록</legend>
+        <label for="address">우편번호: </label>
+        <input
+          type="number"
+          name="address"
+          id="address"
+          size="10"
+          maxlength="8"
+          placeholder="우편번호를 입력하세요."
+        />
+        <br />
+        <label for="address1">기본 주소: </label>
+        <input
+          type="text"
+          name="address1"
+          id="address1"
+          size="40"
+          maxlength="40"
+          placeholder="기본 주소를 입력하세요."
+        />
+        <br />
+        <label for="address2">상세 주소: </label>
+        <input
+          type="text"
+          name="address2"
+          id="address2"
+          size="40"
+          maxlength="40"
+          placeholder="상세주소를 입력하세요."
+        />
+      </fieldset>
+      <div style="display: flex; justify-content: center; padding-bottom: 3px">
+        <div><input type="submit" value="전송" /></div>
+        &nbsp;
+        <div><input type="reset" value="취소" /></div>
+      </div>
+    </form>
+  </body>
+</html>

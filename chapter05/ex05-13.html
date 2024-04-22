@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      table,
+      tr,
+      td {
+        border-collapse: collapse;
+      }
+      table {
+        margin: 0 auto;
+      }
+      td {
+        width: 100px;
+        text-align: center;
+      }
+      tbody > tr:nth-child(even) {
+        background-color: lightgray;
+      }
+      thead > tr {
+        background-color: lightblue;
+      }
+      tfoot {
+        background-color: lightcoral;
+      }
+      tbody > tr > td:hover {
+        background-color: coral;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1학기 성적</h1>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
