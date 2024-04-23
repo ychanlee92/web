@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function kkkk(message) {
+        window.alert(`<h2> ${message} </h2>`);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>document.write() 활용</h1>
+    <hr />
+    <script>
+      let name = prompt();
+      if (name === null) {
+        document.write(`<h2> 이름을 입력하지 않았어요 </h2>`);
+      } else if (name === "이예찬") {
+        document.write(`<h2> ${name}님 </h2>`);
+      } else {
+        document.write(`<h2> 홍길동님 </h2>`);
+      }
+      document.write(`<h2> ${name} </h2>`);
+      let result = confirm("당신은 자바공부 동영상을 보셨나요?");
+      if (result) {
+        document.write(`<h2> 멋져요</h2>`);
+      } else {
+        document.write(`<h2> 열공하세요</h2>`);
+      }
+    </script>
+    <button type="button" onclick="kkkk('gsadg')">클릭</button>
+  </body>
+</html>
