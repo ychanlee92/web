@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>new object()로 객체 만들기, 리터럴 객체로 사용자 객체 만들기</h1>
+    <hr />
+    <script>
+      const liternalObj = {
+        name: "lyc",
+        code: 123,
+        amount: 35000,
+        deposit: function (money) {
+          this.amount += money;
+          return this.amount;
+        },
+        withdraw: function (money) {
+          this.amount -= money;
+          return this.amount;
+        },
+        inquiry: function () {
+          return this.amount;
+        },
+      };
+      const obj = new Object();
+      obj.name = "자바스크립트";
+      obj.code = 456;
+      obj.amount = 20000;
+      obj.deposit = function (money) {
+        this.amount += money;
+        return this.amount;
+      };
+      obj.withdraw = function (money) {
+        this.amount -= money;
+        return this.amount;
+      };
+      obj.inquiry = function () {
+        return this.amount;
+      };
+      document.write(
+        `<span> name = ${obj.name} code = ${obj.code} amount = ${obj.amount}<br/>`
+      );
+      document.write(
+        `<span> amount = ${obj.amount} deposit 1000 -> ${obj.deposit(
+          1000
+        )}<br/>`
+      );
+      document.write(
+        `<span> amount = ${obj.amount} withdraw 1000 -> ${obj.withdraw(
+          1000
+        )}<br/>`
+      );
+      document.write(
+        `<span> name = ${liternalObj.name} code = ${liternalObj.code} amount = ${liternalObj.amount}<br/>`
+      );
+      document.write(
+        `<span> amount = ${
+          liternalObj.amount
+        } deposit 1000 -> ${liternalObj.deposit(1000)}<br/>`
+      );
+      document.write(
+        `<span> amount = ${
+          liternalObj.amount
+        } withdraw 1000 -> ${liternalObj.withdraw(1000)}<br/>`
+      );
+      function Bank(name, code, amount) {
+        this.name = name;
+        this.code = code;
+        this.amount = amount;
+        this.deposit = function (money) {
+          this.amount += money;
+          return this.amount;
+        };
+        this.withdraw = function (money) {
+          this.amount -= money;
+          return this.amount;
+        };
+        this.inquiry = function () {
+          return this.amount;
+        };
+      }
+      const bank1 = new Bank("이예찬", 123, 30000);
+      document.write(
+        `<span> name = ${bank1.name} code = ${bank1.code} amount = ${bank1.amount}<br/>`
+      );
+      document.write(
+        `<span> amount = ${bank1.amount} deposit 1000 -> ${bank1.deposit(
+          1000
+        )}<br/>`
+      );
+      document.write(
+        `<span> amount = ${bank1.amount} withdraw 1000 -> ${bank1.withdraw(
+          1000
+        )}<br/>`
+      );
+    </script>
+  </body>
+</html>

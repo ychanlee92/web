@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function userIdCheck(state) {
+        const userId = document.querySelector("#userId");
+        const userIdInfo = document.querySelector("#userIdInfo");
+        if (state === "blur") {
+          if (userId.value === "") {
+            userIdInfo.innerHTML = `필수 입력 항목입니다.`;
+            return false;
+          } else {
+            userIdInfo.innerHTML = "";
+            return true;
+          }
+        } else if (state === "focus") {
+          userIdInfo.innerHTML = "아이디 입력";
+          return false;
+        }
+      }
+      function userPwCheck(state) {
+        const userPw = document.querySelector("#userPw");
+        const userPwInfo = document.querySelector("#userPwInfo");
+        if (state === "blur") {
+          if (userPw.value === "") {
+            userPwInfo.innerHTML = `필수 입력 항목입니다.`;
+            return false;
+          } else {
+            userPwInfo.innerHTML = "";
+            return true;
+          }
+        } else if (state === "focus") {
+          userPwInfo.innerHTML = "비밀번호 입력";
+          return false;
+        } else {
+        }
+      }
+      function userPwSameCheck(state) {
+        const userPw = document.querySelector("#userPw");
+        const userPwSame = document.querySelector("#userPwSame");
+        const userPwSameInfo = document.querySelector("#userPwSameInfo");
+        if (state === "blur") {
+          if (userPwSame.value === userPw.value) {
+            userPwSameInfo.innerHTML = "같음";
+            return true;
+          } else {
+            userPwSameInfo.innerHTML = "비밀번호가 일치하지 않습니다.";
+            return false;
+          }
+        } else if (state === "focus") {
+          userPwSameInfo.innerHTML = "비밀번호 확인";
+          return false;
+        }
+      }
+      function allCheck(event) {
+        if (
+          userIdCheck("blur") &&
+          userPwCheck("blur") &&
+          userPwSameCheck("blur")
+        ) {
+          return true;
+        } else {
+          alert("가입 양식을 완성하세요.");
+          event.preventDefault();
+        }
+      }
+      function userNameCheck() {
+        const userName = document.querySelector("#userName");
+        const userNameInfo = document.querySelector("#userNameInfo");
+        let nameExp = /^[가-힣]{2,4}$/;
+        if (!userName.value.match(nameExp)) {
+          userNameInfo.innerHTML = `한글2~4문자입력바람`;
+          return false;
+        } else if (userName.value === "") {
+          userNameInfo.innerHTML = `필수입력항목`;
+          return false;
+        } else {
+          userNameInfo.innerHTML = `ok`;
+          return true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="insertMember.jsp" method="post">
+      <fieldset>
+        <label for="userId">아이디</label>
+        <input
+          type="text"
+          name="userId"
+          id="userId"
+          onblur="userIdCheck('blur')"
+          onclick="userIdCheck('focus')"
+        /><br />
+        <span id="userIdInfo"></span><br />
+        <label for="userPw">패스워드</label>
+        <input
+          type="password"
+          name="userPw"
+          id="userPw"
+          onblur="userPwCheck('blur')"
+          onclick="userPwCheck('focus')"
+        /><br />
+        <span id="userPwInfo"></span><br />
+        <label for="userPwSame">패스워드 확인</label>
+        <input
+          type="password"
+          name="userPwSame"
+          id="userPwSame"
+          onblur="userPwSameCheck('blur')"
+          onclick="userPwSameCheck('focus')"
+        /><br />
+        <span id="userPwSameInfo"></span><br />
+        <label for="userName">이름</label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          onkeyup="userNameCheck()"
+        />
+        <br />
+        <span id="userNameInfo" style="color: red"></span> <br />
+        <label for="userEmail">이메일</label>
+        <input
+          type="text"
+          name="userEmail"
+          id="userEmail"
+          onkeyup="userEmailCheck()"
+        />
+        <br />
+        <span id="userEmailInfo"></span> <br />
+        <button onclick="allCheck(event)" type="submit">회원가입하기</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

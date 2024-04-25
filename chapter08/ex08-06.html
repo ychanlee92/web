@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function change() {
+        const spanArray = document.getElementsByTagName("span");
+        for (let i = 0; i < spanArray.length; i++) {
+          spanArray[i].style.color = "red";
+          spanArray[i].style.border = "1px solid red";
+          spanArray[i].style.fontSize = `${i * 10 + 10}px`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="display: inline-block">내가 좋아하는 과일</h1>
+    <button onclick="change()">누르세요</button>
+    <hr />
+    <p>
+      Lorem ipsum <span>dolor</span> sit amet, consectetur
+      <span>dolor</span> adipisicing elit. Maxime dolorem explicabo a iste quam
+      <span>dolor</span> consequuntur quisquam quos quaerat tempore
+      <span>dolor</span> dolores ipsum id dicta, incidunt odio tenetur libero
+      <span>dolor</span> ducimus laudantium sunt.
+    </p>
+  </body>
+</html>

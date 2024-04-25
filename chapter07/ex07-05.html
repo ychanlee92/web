@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function change() {
+        const date = new Date();
+        let second = date.getSeconds();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        if (second % 2 === 0) {
+          document.body.style.backgroundColor = "beige";
+        } else {
+          document.body.style.backgroundColor = "skyblue";
+        }
+        spanTime.innerHTML = `현재 시각: ${hour}시 ${minute}분 ${second}초`;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center">배경색 바꾸기</h1>
+    <hr />
+    <fieldset style="margin: 0 auto; width: 300px">
+      <legend>이벤트 실습하기</legend>
+      <span id="spanTime">현재 시간 보이기 : 2시 11분</span>
+      <br />
+      <button type="button" onclick="change()">
+        배경색 바꾸기, 시간 보이기 이벤트
+      </button>
+    </fieldset>
+  </body>
+</html>
