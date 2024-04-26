@@ -57,7 +57,7 @@
         width: 80%;
       }
       .span4 {
-        color: rgb(23, 79, 184);
+        color: cornflowerblue;
       }
       .emailTh {
         height: 120px;
@@ -85,11 +85,7 @@
       }
       function idCheck() {
         const idCheck = document.querySelector("#userId");
-        if (idCheck.value === "") {
-          alert(`ID가 입력되지 않았습니다.`);
-        } else {
-          alert(`${idCheck.value} 사용 가능한 ID입니다!`);
-        }
+        alert(`${idCheck.value} 사용 가능한 ID입니다!`);
       }
       function userPwCheck(state) {
         const userPw = document.querySelector("#userPw");
@@ -224,21 +220,12 @@
       function loginCheck(event) {
         const id2Check = document.querySelector("#userId2");
         const userPw2 = document.querySelector("#userPw2");
-        const idCheck = document.querySelector("#userId");
-        const userPw = document.querySelector("#userPw");
         if (userId2Check("blur") && userPw2Check("blur")) {
-          if (
-            id2Check.value === idCheck.value &&
-            userPw2.value === userPw.value
-          ) {
-            alert(
-              `로그인 성공!! \n아이디: ${id2Check.value} \n비밀번호: ${userPw2.value}`
-            );
-            event.preventDefault();
-            return true;
-          } else {
-            alert(`회원 정보가 일치하지 않습니다.`);
-          }
+          alert(
+            `로그인 성공!! \n아이디: ${id2Check.value} \n비밀번호: ${userPw2.value}`
+          );
+          event.preventDefault();
+          return true;
         } else {
           alert("로그인 양식을 완성하세요.");
           event.preventDefault();

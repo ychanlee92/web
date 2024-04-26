@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let myWindow = null;
+      function createWindow() {
+        let popupWidth = 600;
+        let popupHeight = 600;
+
+        let popupX = window.screen.width / 2 - popupWidth / 2;
+        let popupY = window.screen.height / 2 - popupHeight / 1.5;
+        window.open(
+          "",
+          "",
+          "status=no, height=" +
+            popupHeight +
+            ", width=" +
+            popupWidth +
+            ", left=" +
+            popupX +
+            ", top=" +
+            popupY
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <h1>HTMl문서 작성기 만들기</h1>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      quo, perspiciatis cumque dignissimos, voluptas, dolorum fuga facilis ab
+      laudantium vero nemo laborum dolorem! Dolores nihil explicabo
+      necessitatibus, unde aperiam repellendus. Est debitis autem voluptatem
+      eius vitae. In consequatur, incidunt quae similique perspiciatis enim
+      minus veritatis animi omnis ut pariatur, impedit suscipit voluptatibus
+      doloribus delectus. Quis quisquam architecto harum magnam mollitia?
+    </p>
+    <form action="#" method="post">
+      <textarea name="content" id="content" cols="30" rows="10"></textarea>
+      <button type="button" onclick="createWindow()">HTML 문서 출력하기</button>
+    </form>
+  </body>
+</html>

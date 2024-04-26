@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let p = null,
+        h1 = null,
+        hr = null;
+      function init() {
+        h1 = document.querySelector("#h1");
+        hr = document.querySelector("#hr");
+        p = document.querySelector("#p");
+        p.addEventListener(
+          "mouseover",
+          () => (p.style.backgroundColor = `orchid`)
+        );
+        p.addEventListener(
+          "mouseout",
+          () => (p.style.backgroundColor = `white`)
+        );
+      }
+    </script>
+  </head>
+  <body onload="init()">
+    <h1 id="h1">addEventListener()를 이용한 리스너 등록</h1>
+    <hr id="hr" />
+    <p id="p">마우스를 올리면 orchid 색으로 변경</p>
+  </body>
+</html>

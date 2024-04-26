@@ -1,0 +1,71 @@
+body{
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#divHeader{
+  width: 100%;
+  background-color: rgb(213, 255, 213);
+  display: flex;
+  justify-content: center;
+}
+#headerDiv{
+  height: 120px;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#divHeaderRight{
+  width: 18%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+#divNav{
+  width: 100%;
+  height: 30px;
+  background-color: darksalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navDiv{
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+#divNavLeft{
+  width: 70%;
+  display: flex;
+  justify-content:space-between;
+}
+#divNavRight{
+  width: 20%;
+display: flex;
+justify-content: space-between;
+}
+#divSection{
+  width: 100%;
+  background-color: beige;
+  height: 670px;
+}
+#divFooter{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+#divFooter1{
+  width: 100%;
+  height: 30px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+#
