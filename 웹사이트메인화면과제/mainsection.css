@@ -1,0 +1,19 @@
+#divSection{
+    width: 100%;
+    background-color: beige;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #divSection>div{
+    width: 80%;
+  }
+  #divSection>div>img{
+    height: 300px;
+    display: inline-block;
+  }
+  body{
+    width: 100%;
+    margin: 0 auto;
+  }

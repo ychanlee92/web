@@ -16,13 +16,20 @@
           <div id="headerDiv">
             <div>
               <!-- 메인사진 -->
-              <img src="" alt="고양이 사진" />
+              <img
+                id="headerImg"
+                src="../웹사이트메인화면과제/source/2.jpg"
+                alt="고양이 사진"
+              />
+            </div>
+            <div>
+              <h1>고양이 사진 보고 가세요</h1>
             </div>
             <!-- 헤더 오른쪽 div -->
             <div id="divHeaderRight">
               <!-- 타사이트 앵커 -->
-              <a href="">Home</a>
-              <a href="">Sitemap</a>
+              <a class="divHeaderRightA" href="#"><b>Home</b></a>
+              <a class="divHeaderRightA" href="#"><b>Sitemap</b></a>
             </div>
           </div>
         </div>
@@ -33,34 +40,108 @@
           <div id="navDiv">
             <!-- 네브 왼쪽 div -->
             <div id="divNavLeft">
-              <!-- 메뉴 -->
-              <a href="">Home</a>
-              <a href="">Gallery</a>
-              <a href="">게시판</a>
-              <a href="">멀티미디어</a>
-              <a href="">상품 구매</a>
-              <a href="">찾아오시는 길</a>
+              <ul>
+                <!-- 메뉴 -->
+                <li>
+                  <a class="divNavLeftA" href="#"
+                    ><b>&nbsp;&nbsp;Home&nbsp;&nbsp;</b></a
+                  >
+                </li>
+                <li>
+                  <a class="divNavLeftA" href="#"
+                    ><b>&nbsp;&nbsp;Gallery&nbsp;&nbsp;</b></a
+                  >
+                </li>
+                <li id="navMenu">
+                  <a class="divNavLeftA" href="#"
+                    ><b
+                      >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;게시판&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b
+                    ></a
+                  >
+                  <div id="menuDiv">
+                    <a
+                      class="menuA"
+                      href="../웹사이트메인화면과제/section.html"
+                      target="sectionIframe"
+                      ><b>자유게시판</b></a
+                    >
+                    <a class="menuA" href="#"><b>문의게시판</b></a>
+                    <a class="menuA1" href="#"><b>건의게시판</b></a>
+                  </div>
+                </li>
+                <li id="navMulti">
+                  <a class="divNavLeftA" href="#"
+                    ><b>&nbsp;&nbsp;&nbsp;멀티미디어&nbsp;&nbsp;&nbsp;</b></a
+                  >
+                  <div id="multiDiv">
+                    <a class="multiA" href="#"><b>음악 듣기</b></a>
+                    <a class="multiA1" href="#"><b>동영상 보기</b></a>
+                  </div>
+                </li>
+                <li>
+                  <a class="divNavLeftA" href="#"
+                    ><b>&nbsp;&nbsp;상품 구매&nbsp;&nbsp;</b></a
+                  >
+                </li>
+                <li>
+                  <a class="divNavLeftA" href="#"
+                    ><b>&nbsp;&nbsp;찾아오시는 길&nbsp;&nbsp;</b></a
+                  >
+                </li>
+              </ul>
             </div>
             <!-- 네브 오른쪽 div -->
             <div id="divNavRight">
               <!-- 로그인 & 회원가입 창 띄우기 -->
-              <a href="javascript:loginWindow()">로그인</a>
-              <a href="javascript:signUpWindow()">회원가입</a>
+              <a class="divNavRightA" href="javascript:loginWindow()"
+                ><b>로그인</b></a
+              >
+              <a class="divNavRightA" href="javascript:signUpWindow()"
+                ><b>회원가입</b></a
+              >
             </div>
           </div>
         </div>
       </nav>
+      <!-- 섹션 -->
       <section>
-        <div id="divSection"></div>
+        <div id="divSection">
+          <iframe
+            src="../웹사이트메인화면과제/mainsection.html"
+            width="100%"
+            height="100%"
+            name="sectionIframe"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
       </section>
+      <!-- 푸터 -->
       <footer>
+        <!-- 푸터 메인 div -->
         <div id="divFooter">
           <div id="divFooter1">
+            <!-- 푸터 윗 div -->
             <div id="divFooter2">
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
-              <a href=""></a>
+              <a href="#"><b>다운로드</b></a>
+              <a href="#"><b>개인정보처리방침</b> </a>
+              <a href="#"><b>저작권지침및신고</b></a>
+              <a href="#"><b>이메일무단수집거부</b></a>
+            </div>
+          </div>
+          <!-- 푸터 아랫 div -->
+          <div id="divFooter3">
+            <div>
+              <span
+                >왕십리 캠퍼스: 서울시 성동구 무학로2길 54 신방빌딜 4,5층 tel:
+                12-345-7890</span
+              >
+            </div>
+            <div>
+              <span
+                >Copytight c 2018 mrhi, Inc. ALl right reserved. Contact
+                webmaster for more information. 23-455-1234</span
+              >
             </div>
           </div>
         </div>

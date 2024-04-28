@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../웹사이트메인화면과제/website.main.js"></script>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend style="text-align: center">로그인</legend>
+        <div style="display: flex">
+          <div style="display: flex; flex-direction: column">
+            <input
+              type="text"
+              name="userId2"
+              id="userId2"
+              placeholder="아이디 or 이메일"
+              style="margin: 2px"
+              onblur="userId2Check('blur')"
+              onclick="userId2Check('focus')"
+            />
+            <input
+              type="password"
+              name="userPw2"
+              id="userPw2"
+              placeholder="비밀번호"
+              style="margin: 2px"
+              onblur="userPw2Check('blur')"
+              onclick="userPw2Check('focus')"
+            />
+          </div>
+          <div>
+            <input
+              style="
+                width: 120px;
+                height: 46px;
+                margin: 2px;
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 4px;
+                color: white;
+              "
+              type="button"
+              value="로그인"
+              onclick="loginCheck(event)"
+            />
+            <span style="font-size: 13px; color: red" id="loginInfo"
+              >&nbsp;</span
+            >
+          </div>
+        </div>
+        <div style="margin: 0 0 5px 0">
+          <input
+            style="accent-color: orange"
+            type="checkbox"
+            name="loginRemain"
+            id="loginRemain"
+          /><label style="font-size: 14px" for="loginRemain"
+            >로그인 상태 유지</label
+          ><input
+            style="accent-color: green"
+            type="checkbox"
+            name="loginSave"
+            id="loginSave"
+          /><label style="font-size: 14px" for="loginRemain">아이디 저장</label>
+        </div>
+        <span
+          style="
+            border: 1px solid rgb(143, 143, 143);
+            font-size: 13px;
+            padding: 2px;
+            border-radius: 3px;
+          "
+          >개인 정보 보호를 위해
+          <span style="color: red">개인 PC에서 사용해주세요.</span></span
+        >
+        <div style="margin-top: 10px">
+          <input type="button" value="아이디 찾기" onclick="idSearch()" /><input
+            type="button"
+            value="비밀번호 찾기"
+            style="margin: 0 3px"
+            onclick="pwSearch()"
+          /><input
+            style="
+              background-color: gray;
+              color: white;
+              border: 1px solid rgb(63, 63, 63);
+              border-radius: 2px;
+            "
+            type="button"
+            value="회원가입"
+            onclick="window.scrollTo(0,0);"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

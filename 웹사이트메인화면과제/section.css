@@ -1,0 +1,62 @@
+body{
+    width: 100%;
+    margin: 0 auto;
+    background-color: beige;
+  }
+#sectionDiv{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#sectionDiv>img{
+    height: 280px;
+}
+table{
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    vertical-align: bottom;
+    border: 3px double darkolivegreen;border-collapse: collapse;
+}
+th{
+    border: 3px double darkolivegreen;
+    border-collapse: collapse;
+}
+td{
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.tdNum{
+    width: 13%;
+}
+.tdTitle{
+    width: 55%;
+    text-align: left;
+    padding-left: 20px;
+}
+.tdId{
+    width: 17%;
+    text-align: right;
+    padding-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(211, 153, 27);
+}
+a:hover{
+    color: blueviolet;
+}
+#pageDiv{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    position: relative;
+    left: 50px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
