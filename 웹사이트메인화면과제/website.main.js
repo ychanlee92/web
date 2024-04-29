@@ -1,6 +1,6 @@
 //팝업 창 크기 조절
 function loginWindow() {
-  let popupWidth = 500;
+  let popupWidth = 600;
   let popupHeight = 200;
   let popupX = window.screen.width / 2 - popupWidth / 2;
   let popupY = window.screen.height / 2 - popupHeight / 1.5;

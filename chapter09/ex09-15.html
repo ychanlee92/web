@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let imgNameArray = [
+        "../소스/9/media/puppy.png",
+        "../소스/9/media/Penguins.png",
+        "../소스/9/media/Jellyfish.png",
+        "../소스/9/media/Tulips.png",
+        "../소스/9/media/Lighthouse.png",
+        "../소스/9/media/Desert.png",
+        "../소스/9/media/Hydrangeas.png",
+        "../소스/9/media/beach.png",
+        "../소스/9/media/beach2.png",
+      ];
+      let count = 0;
+      function changeImg(img) {
+        img.src = imgNameArray[count++ % imgNameArray.length];
+      }
+    </script>
+  </head>
+  <body>
+    <h1>new Image()로 이미지 로딩</h1>
+    <hr />
+    <div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+        delectus.
+      </p>
+      <img
+        src="../소스/9/media/Koala.png"
+        alt="코알라"
+        width="200px"
+        height="200px"
+        onclick="changeImg(this)"
+      />
+    </div>
+  </body>
+</html>

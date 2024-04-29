@@ -4,7 +4,7 @@ body{
     background-color: beige;
   }
 #sectionDiv{
-    width: 100%;
+     width: 100%;
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +42,7 @@ td{
 }
 a{
     text-decoration: none;
-    color: rgb(129, 90, 5);
+    color: rgb(211, 153, 27);
 }
 a:hover{
     color: blueviolet;
