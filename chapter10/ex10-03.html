@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let setTimeId = 0;
+      function callTimer(obj, time) {
+        setTimeId = setTimeout(() => {
+          window.location = "http://www.naver.com";
+        }, time);
+      }
+      function clearTimer() {
+        if (setTimeId > 0) {
+          clearTimeout(setTimeId);
+          alert(`타이머가 해제되었습니다.`);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>5초간 마우스를 올리면 네이버를 부른다.</h1>
+    <hr />
+    <div>
+      <img
+        src="../소스/10/media/naver.gif"
+        alt="naver"
+        width="200px"
+        height="100px"
+        onmouseover="callTimer(this, 5000)"
+        onmouseout="clearTimer()"
+      />
+    </div>
+  </body>
+</html>

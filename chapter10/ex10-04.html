@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let setTimeId = 0;
+      function rotateText() {
+        setTimeId = setInterval(() => {
+          let myP = document.querySelector("#myP");
+          let str = myP.innerHTML;
+          let first = str.substr(0, 1);
+          let remain = str.substr(1, str.length - 1);
+          myP.innerHTML = remain + first;
+        }, 200);
+      }
+      function stop() {
+        clearInterval(setTimeId);
+      }
+    </script>
+  </head>
+  <body onload="rotateText()">
+    <h1>글자가 회전하는 프로그램 만들기</h1>
+    <hr />
+    <p id="myP" onclick="stop()">글자가 자동으로 회전하는 텍스트입니다</p>
+  </body>
+</html>

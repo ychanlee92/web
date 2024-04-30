@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="website-main.css" />
+    <link rel="stylesheet" href="../chapter11/css/style.css" />
     <script src="../웹사이트메인화면과제/website.main.js"></script>
   </head>
-  <body>
+  <body onload="call_js()">
     <div>
       <!-- 헤더 -->
       <header>
@@ -16,14 +17,21 @@
           <div id="headerDiv">
             <div>
               <!-- 메인사진 -->
-              <img
-                id="headerImg"
-                src="../웹사이트메인화면과제/source/2.jpg"
-                alt="고양이 사진"
-              />
+              <a href="../웹사이트메인화면과제/website-main.html"
+                ><img
+                  id="headerImg"
+                  src="../웹사이트메인화면과제/source/2.jpg"
+                  alt="고양이 사진"
+              /></a>
             </div>
             <div>
-              <h1>고양이 사진 보고 가세요</h1>
+              <h1>
+                <a href="../웹사이트메인화면과제/website-main.html ">
+                  고<span> 양이</span><br />사<span> 진</span><br />양<span>
+                    껏 가져가세요</span
+                  >
+                </a>
+              </h1>
             </div>
             <!-- 헤더 오른쪽 div -->
             <div id="divHeaderRight">
@@ -33,7 +41,12 @@
                 href="../웹사이트메인화면과제/website-main.html"
                 ><b>Home</b></a
               >
-              <a class="divHeaderRightA" href="#"><b>Sitemap</b></a>
+              <a
+                class="divHeaderRightA"
+                href="https://search.naver.com/search.naver?ssc=tab.image.all&where=image&sm=tab_jum&query=%EA%B3%A0%EC%96%91%EC%9D%B4"
+                target="_blank"
+                ><b>Sitemap</b></a
+              >
             </div>
           </div>
         </div>
@@ -110,6 +123,46 @@
       <!-- 섹션 -->
       <section>
         <div id="divSection">
+          <div id="sectionImage">
+            <div class="slideshow">
+              <div class="slideshow_slides">
+                <a href="http://www.naver.com"
+                  ><img src="../chapter11/img/slide-1.jpg" alt="slide1"
+                /></a>
+                <a href="#"
+                  ><img src="../chapter11/img/slide-2.jpg" alt="slide2"
+                /></a>
+                <a href="#"
+                  ><img src="../chapter11/img/slide-3.jpg" alt="slide3"
+                /></a>
+                <a href="#"
+                  ><img src="../chapter11/img/slide-4.jpg" alt="slide4"
+                /></a>
+              </div>
+              <div class="slideshow_nav">
+                <a class="prev" href=""
+                  ><i class="fa-solid fa-circle-chevron-left"></i
+                ></a>
+                <a class="next" href=""
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                ></a>
+              </div>
+              <div class="indicator">
+                <a href="#" class="active"
+                  ><i class="fa-solid fa-circle-dot"></i
+                ></a>
+                <a href="#" class="passive"
+                  ><i class="fa-solid fa-circle-dot"></i
+                ></a>
+                <a href="#" class="passive"
+                  ><i class="fa-solid fa-circle-dot"></i
+                ></a>
+                <a href="#" class="passive"
+                  ><i class="fa-solid fa-circle-dot"></i
+                ></a>
+              </div>
+            </div>
+          </div>
           <iframe
             src="../웹사이트메인화면과제/mainsection.html"
             width="100%"

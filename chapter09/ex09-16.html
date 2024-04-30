@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function checkName(obj) {
+        if (obj.value === "") {
+          obj.focus();
+        }
+      }
+    </script>
+  </head>
+  <body onload="document.querySelector('#name').focus()">
+    <h1>onfocus와 onblur</h1>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolorum.
+    </p>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>개인정보 입력</legend>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" size="10" maxlength="10" />
+        <br />
+        <label for="number">학번</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          size="10"
+          maxlength="10"
+          onblur="checkName(this)"
+        />
+        <br />
+        <button type="submit">전송</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

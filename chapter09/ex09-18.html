@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function checkSum(obj) {
+        let sum = document.querySelector("#sum");
+        if (obj.checked === true) {
+          sum.value = `${parseInt(sum.value) + parseInt(obj.value)}`;
+        } else {
+          sum.value = `${parseInt(sum.value) - parseInt(obj.value)}`;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>물품을 선택하면 금액이 자동 계산됩니다.</h1>
+    <hr />
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="checkbox1"
+      value="10000"
+      onclick="checkSum(this)"
+    /><label for="checkbox1">모자 1만원</label>
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="checkbox2"
+      value="20000"
+      onclick="checkSum(this)"
+    /><label for="checkbox2">구두 2만원</label>
+    <input
+      type="checkbox"
+      name="checkbox"
+      id="checkbox3"
+      value="90000"
+      onclick="checkSum(this)"
+    /><label for="checkbox3">명품 가방 9만원</label>
+    <br />
+    <label for="sum">지불하실 금액: </label
+    ><input type="text" name="sum" id="sum" value="0" />
+  </body>
+</html>
