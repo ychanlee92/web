@@ -79,6 +79,7 @@ function idCheck() {
   }
   if(b === 1){
     alert(`이미 사용중인 ID입니다!`);
+    return false;
   } else if(idCheck.value === ""){
     alert(`아이디를 입력하세요.`);
   } else {
@@ -189,10 +190,10 @@ function allCheck(event) {
     userP[userI.length]=userPw.value;
     userN[userI.length]=userName.value;
     alert(
-      `가입 완료!! \n아이디: ${userI} ${idCheck.value} \n비밀번호: ${userPw.value} \n성명: ${userName.value}\nEmail: ${userEmail.value} `
+      `가입 완료!! \n아이디: ${idCheck.value} \n비밀번호: ${userPw.value} \n성명: ${userName.value}\nEmail: ${userEmail.value} `
     );
     event.preventDefault();
-    window.close();
+    window.open('../웹사이트메인화면과제/mainsection.html','sectionIframe');
     return true;
   } else {
     alert("가입 양식을 완성하세요.");
@@ -264,6 +265,7 @@ function userPw2Check(state) {
 function loginCheck(event) {
   const id2Check = document.querySelector("#userId2");
   const userPw2 = document.querySelector("#userPw2");
+
   for(let i=0; i<userI.length; i++){
     if(id2Check.value===userI[i] && userPw2.value=== userP[i]){
       b = 1;
@@ -273,7 +275,7 @@ function loginCheck(event) {
     if(b === 1){
       alert(`로그인 성공!! \n아이디: ${id2Check.value} \n비밀번호: ${userPw2.value}`);
       event.preventDefault();
-      window.close();
+      window.open('../웹사이트메인화면과제/mainsection.html','sectionIframe');
       return true;
     } else{
       alert(`회원 정보가 일치하지 않습니다.`)
@@ -399,4 +401,103 @@ function call_js(){
     gotoSlide(i);
   });
  }
+}
+//스크롤함수
+let ctnt=[]; // 배열 선언
+ctnt[0]="<img src='../웹사이트메인화면과제/source/2.jpg' height='130px'>";
+ctnt[1]="<img src='../웹사이트메인화면과제/source/16.jpg' height='130px'>";
+ctnt[2]="<img src='../웹사이트메인화면과제/source/17.jpg' height='130px'>";
+ctnt[3]="<img src='../웹사이트메인화면과제/source/18.jpg' height='130px'>";
+ctnt[4]="<img src='../웹사이트메인화면과제/source/19.jpg' height='130px'>";
+ctnt[5]="<img src='../웹사이트메인화면과제/source/20.png' height='130px'>";
+ctnt[6]="<img src='../웹사이트메인화면과제/source/21.jpg' height='130px'>";
+ctnt[7]="<img src='../웹사이트메인화면과제/source/22.jpg' height='130px'>";
+let timer = 0;
+function start() {
+  
+    document.write("<div id='area" + 0 + "' style='position: absolute; top:0; left:" + 0 + "px'>");
+    document.write(ctnt[0]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 1 + "' style='position: absolute; top:0; left:" + 196 + "px'>");
+    document.write(ctnt[1]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 2 + "' style='position: absolute; top:0; left:" + 326 + "px'>");
+    document.write(ctnt[2]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 3 + "' style='position: absolute; top:0; left:" + 456 + "px'>");
+    document.write(ctnt[3]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 4 + "' style='position: absolute; top:0; left:" + 586 + "px'>");
+    document.write(ctnt[4]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 5 + "' style='position: absolute; top:0; left:" + 718 + "px'>");
+    document.write(ctnt[5]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 6 + "' style='position: absolute; top:0; left:" + 868 + "px'>");
+    document.write(ctnt[6]);
+    document.write("</div>");
+
+    document.write("<div id='area" + 7 + "' style='position: absolute; top:0; left:" + 994 + "px'>");
+    document.write(ctnt[7]);
+    document.write("</div>");
+  
+  setTimeout(scroll, 0);
+}
+function scroll() {
+    let tmp=null;
+    tmp = document.getElementById("area"+0).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-196){
+        tmp.left = 902 + "px"
+    }
+    tmp = document.getElementById("area"+1).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-130){
+        tmp.left = 968 + "px"
+    }
+    tmp = document.getElementById("area"+2).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-130){
+        tmp.left = 968 + "px"
+    }
+    tmp = document.getElementById("area"+3).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-130){
+        tmp.left = 968 + "px"
+    }
+    tmp = document.getElementById("area"+4).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-132){
+        tmp.left = 966 + "px"
+    }
+    tmp = document.getElementById("area"+5).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-150){
+        tmp.left = 948 + "px"
+    }
+    tmp = document.getElementById("area"+6).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-128){
+        tmp.left = 970 + "px"
+    }
+    tmp = document.getElementById("area"+7).style;
+    tmp.left = parseInt(tmp.left) - 2 + "px";
+    if(parseInt(tmp.left)<=-104){
+        tmp.left = 994 + "px"
+    }
+
+  timer=setTimeout(scroll, 20);
+}
+function disappear(){
+  document.querySelector("#uphide").style.display="none";
+}
+function appear(){
+  window.scrollTo(0,0);
+  document.querySelector("#uphide").style.display="";
 }

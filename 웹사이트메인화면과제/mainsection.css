@@ -8,12 +8,12 @@
   }
   #divSection>div{
     width: 80%;
+    padding-left: 4px;
   }
   #divSection>div>img{
     height: 300px;
     display: inline-block;
   }
   body{
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
   }

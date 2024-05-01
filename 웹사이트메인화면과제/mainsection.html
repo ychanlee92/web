@@ -5,18 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../웹사이트메인화면과제/mainsection.css" />
+    <script>
+      function call_confirm(imageURL, fileName) {
+        if (confirm("이미지를 다운로드하겠습니까?")) {
+          let img = new Image();
+          img.crossOrigin = "Anonymous";
+          img.id = "getshot";
+          img.src = imageURL;
+          document.body.appendChild(img);
+
+          let a = document.createElement("a");
+          a.href = getshot.src;
+          a.download = fileName;
+          a.click();
+          document.body.removeChild(img);
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="divSection">
       <div>
-        <img src="../웹사이트메인화면과제/source/1.jpg" alt="사진1" />
-        <img src="../웹사이트메인화면과제/source/3.jpg" alt="사진2" />
-        <img src="../웹사이트메인화면과제/source/4.jpg" alt="사진3" />
+        <img
+          src="../웹사이트메인화면과제/source/1.jpg"
+          alt="사진1"
+          onclick="call_confirm(this.src,'1.jpg')"
+        />
+        <img
+          src="../웹사이트메인화면과제/source/3.jpg"
+          alt="사진2"
+          onclick="call_confirm(this.src,'3.jpg')"
+        />
+        <img
+          src="../웹사이트메인화면과제/source/4.jpg"
+          alt="사진3"
+          onclick="call_confirm(this.src,'4.jpg')"
+        />
       </div>
       <div>
-        <img src="../웹사이트메인화면과제/source/5.jpg" alt="사진4" />
-        <img src="../웹사이트메인화면과제/source/6.jpg" alt="사진5" />
-        <img src="../웹사이트메인화면과제/source/7.jpg" alt="사진6" />
+        <img
+          src="../웹사이트메인화면과제/source/5.jpg"
+          alt="사진4"
+          onclick="call_confirm(this.src,'5.jpg')"
+        />
+        <img
+          src="../웹사이트메인화면과제/source/6.jpg"
+          alt="사진5"
+          onclick="call_confirm(this.src,'6.jpg')"
+        />
+        <img
+          src="../웹사이트메인화면과제/source/7.jpg"
+          alt="사진6"
+          onclick="call_confirm(this.src,'7.jpg')"
+        />
       </div>
     </div>
   </body>

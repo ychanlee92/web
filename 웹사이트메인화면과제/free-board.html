@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../웹사이트메인화면과제/free-board.css" />
+    <script>
+      function call_confirm(imageURL, fileName) {
+        if (confirm("이미지를 다운로드하겠습니까?")) {
+          let img = new Image();
+          img.crossOrigin = "Anonymous";
+          img.id = "getshot";
+          img.src = imageURL;
+          document.body.appendChild(img);
+
+          let a = document.createElement("a");
+          a.href = getshot.src;
+          a.download = fileName;
+          a.click();
+          document.body.removeChild(img);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h1>자유 게시판</h1>
+      <h2><ins>고양이 사진을 자유롭게 올리는 게시판입니다.</ins></h2>
+      <!-- 섹션 -->
+      <section>
+        <div id="sectionDiv">
+          <img
+            src="../웹사이트메인화면과제/source/14.jpg"
+            alt="고양이사진8"
+            onclick="call_confirm(this.src,'14.jpg')"
+          />
+          <div>
+            <iframe
+              src="../웹사이트메인화면과제/section.html"
+              frameborder="0"
+              name="free-boardIframe"
+            >
+            </iframe>
+          </div>
+          <img
+            src="../웹사이트메인화면과제/source/12.jpg"
+            alt="고양이사진9"
+            onclick="call_confirm(this.src,'12.jpg')"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

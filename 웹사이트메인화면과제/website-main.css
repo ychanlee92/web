@@ -8,13 +8,17 @@ a{
   color: black;
 }
 h1{
+  position: relative;
+  right: 60px;
+}
+h1>a{
   color: rgb(252, 236, 16);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 34px;
 }
 h1 span{
-  font-size: 18px;  
+  font-size: 20px;  
   -webkit-text-stroke-width: 1px;
   color: rgb(54, 54, 54);
 }
@@ -27,14 +31,23 @@ display: inline-block;}
   justify-content: center;
 }
 #headerDiv{
-  height: 120px;
+  height: 130px;
   width: 94%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#headerImg{
-  height: 120px;
+#scrolldiv{
+  position: relative;
+  left: -40px;
+  top: 0px;
+  --width: 800px;
+  width: 220px;            
+  height: 130px;
+  overflow: hidden;  
+}
+.headerImg{
+  height: 130px;
   position: relative;
   top: 2px;
   right: 40px;
@@ -103,6 +116,8 @@ ul{
 }
 #navMenu:hover #menuDiv{
   display: block;
+  z-index: 2;
+  position: absolute;
 }
 #multiDiv{display: none;}
 .multiA1,.multiA{
@@ -121,6 +136,8 @@ ul{
 }
 #navMulti:hover #multiDiv{
   display: block;
+  position: absolute;
+  z-index: 2;
 }
 .multiA:hover,.multiA1:hover,.menuA:hover,.menuA1:hover{
   color: blueviolet;
@@ -140,24 +157,41 @@ ul{
 .divNavRightA:hover{
   color: purple;
 }
+#navLogin{
+  position: relative;
+  left: 301px;
+  top: 9px;
+}
+#navLogin2{
+  position: relative;
+  left: 316px;
+  top: 9px;
+}
+#navLogin3{
+  display: none;
+}
 #divSection{
   width: 100%;
   background-color: beige;
-  height: 960px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 #sectionImage{
   width: 100%;
-  height: 450px;
+  height: 391px;
+  overflow: hidden;
 }
-#divSection>div{
-  width: 80%;
+iframe{
+  width: 100%;
+  height: 700px;
 }
-#divSection>div>img{
-  height: 300px;
-  display: inline-block;
+aside i{
+  position: absolute;
+  bottom: 10px;
+  right: 240px;
+  font-size: 25px;
+  color: rgb(78, 78, 78);
+  position: fixed;
 }
 #divFooter{
   width: 100%;

@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="website-main.css" />
     <link rel="stylesheet" href="../chapter11/css/style.css" />
     <script src="../웹사이트메인화면과제/website.main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a3088bf1ff.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body onload="call_js()">
     <div>
@@ -17,18 +22,19 @@
           <div id="headerDiv">
             <div>
               <!-- 메인사진 -->
-              <a href="../웹사이트메인화면과제/website-main.html"
-                ><img
-                  id="headerImg"
-                  src="../웹사이트메인화면과제/source/2.jpg"
-                  alt="고양이 사진"
-              /></a>
+              <a href="../웹사이트메인화면과제/website-main.html">
+                <div id="scrolldiv">
+                  <script>
+                    start();
+                  </script>
+                </div>
+              </a>
             </div>
             <div>
               <h1>
                 <a href="../웹사이트메인화면과제/website-main.html ">
-                  고<span> 양이</span><br />사<span> 진</span><br />양<span>
-                    껏 가져가세요</span
+                  고<span> 양이<br /></span>사<span> 진<br /></span>양<span>
+                    껏 즐겨요</span
                   >
                 </a>
               </h1>
@@ -60,7 +66,9 @@
               <ul>
                 <!-- 메뉴 -->
                 <li>
-                  <a class="divNavLeftA" href="#"
+                  <a
+                    class="divNavLeftA"
+                    href="../웹사이트메인화면과제/website-main.html"
                     ><b>&nbsp;&nbsp;Home&nbsp;&nbsp;</b></a
                   >
                 </li>
@@ -78,7 +86,7 @@
                   <div id="menuDiv">
                     <a
                       class="menuA"
-                      href="../웹사이트메인화면과제/section.html"
+                      href="../웹사이트메인화면과제/free-board.html"
                       target="sectionIframe"
                       ><b>자유게시판</b></a
                     >
@@ -107,13 +115,24 @@
                 </li>
               </ul>
             </div>
+            <!-- 네브 로그인 -->
+            <div id="navLogin3">
+              <span id="navLogin" class="divNavRightA"><b>이예찬님</b></span>
+              <span id="navLogin2" class="divNavRightA"><b>로그아웃</b></span>
+            </div>
             <!-- 네브 오른쪽 div -->
             <div id="divNavRight">
               <!-- 로그인 & 회원가입 창 띄우기 -->
-              <a class="divNavRightA" href="javascript:loginWindow()"
+              <a
+                class="divNavRightA"
+                href="../웹사이트메인화면과제/login.html"
+                target="sectionIframe"
                 ><b>로그인</b></a
               >
-              <a class="divNavRightA" href="javascript:signUpWindow()"
+              <a
+                class="divNavRightA"
+                href="../웹사이트메인화면과제/signup.html"
+                target="sectionIframe"
                 ><b>회원가입</b></a
               >
             </div>
@@ -126,16 +145,24 @@
           <div id="sectionImage">
             <div class="slideshow">
               <div class="slideshow_slides">
-                <a href="http://www.naver.com"
+                <a
+                  href="https://www.google.co.kr/search?q=%EC%A7%80%EA%B5%AC&sca_esv=260407b5166ebe05&sxsrf=ACQVn08-qCsQf0aoTIta8ar_I9kqygmEdQ%3A1714591838571&source=hp&ei=XpgyZpDWDoyw2roP362LgAU&iflsig=ANes7DEAAAAAZjKmbq41T4H1xVK7jLv9npq2YFJIQKaI&udm=&ved=0ahUKEwiQ_c-rmO2FAxUMmFYBHd_WAlAQ4dUDCBc&uact=5&oq=%EC%A7%80%EA%B5%AC&gs_lp=Egdnd3Mtd2l6Igbsp4DqtawyCxAuGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgoQABiABBhDGIoFMgsQABiABBixAxiDATILEC4YgAQYsQMYgwEyCBAAGIAEGLEDMgsQLhiABBixAxiDATIIEC4YgAQYsQNIhAxQAFiwAnABeACQAQGYAXigAbgDqgEDMC40uAEDyAEA-AEBmAIDoALvAcICBBAuGAOYAwCSBwMxLjKgB9kr&sclient=gws-wiz"
+                  target="_blank"
                   ><img src="../chapter11/img/slide-1.jpg" alt="slide1"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.google.co.kr/search?q=%ED%99%94%EC%84%B1%EB%A1%9C%EB%B4%87&sca_esv=260407b5166ebe05&sxsrf=ACQVn0_5sG-DYJjtEbvoiVGG5NZlQpGTCQ%3A1714591840816&ei=YJgyZsm0MYDc2roP9vWD2As&udm=&ved=0ahUKEwjJ5OysmO2FAxUArlYBHfb6ALsQ4dUDCBA&uact=5&oq=%ED%99%94%EC%84%B1%EB%A1%9C%EB%B4%87&gs_lp=Egxnd3Mtd2l6LXNlcnAiDO2ZlOyEseuhnOu0hzIFEAAYgAQyBRAAGIAEMgIQJjICECYyAhAmMgIQJjICECYyCBAAGIAEGKIESKcPUABY9w1wAngBkAECmAGIAaAB7gqqAQQwLjExuAEDyAEA-AEBmAIIoAKcBsICCxAAGIAEGLEDGIMBwgIEEAAYA8ICCxAuGIAEGLEDGIMBwgIIEAAYgAQYsQPCAggQLhiABBixA8ICChAAGIAEGEMYigXCAgUQLhiABMICERAuGIAEGMcBGJgFGJkFGK8BwgIUEC4YgAQYlwUY3AQY3gQY4ATYAQHCAgYQABgeGA-YAwC6BgYIARABGBSSBwMyLjagB9Vn&sclient=gws-wiz-serp"
+                  target="_blank"
                   ><img src="../chapter11/img/slide-2.jpg" alt="slide2"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.google.co.kr/search?q=%EB%A1%9C%EC%BC%93%EB%B0%9C%EC%82%AC&sca_esv=260407b5166ebe05&sxsrf=ACQVn08_lfgtXqYWEBV5Dv75-a66-9wyOQ%3A1714591897338&ei=mZgyZt2RFOzl2roPlKuOSA&udm=&ved=0ahUKEwidwubHmO2FAxXsslYBHZSVAwkQ4dUDCBA&uact=5&oq=%EB%A1%9C%EC%BC%93%EB%B0%9C%EC%82%AC&gs_lp=Egxnd3Mtd2l6LXNlcnAiDOuhnOy8k-uwnOyCrDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI-hVQmAVYyxRwBHgBkAEBmAGEAaABtQmqAQQwLjEwuAEDyAEA-AEBmAIJoAL4BMICChAAGLADGNYEGEfCAgsQABiABBixAxiDAcICCxAuGIAEGLEDGIMBwgIKEAAYgAQYQxiKBcICCBAAGIAEGLEDwgILEC4YgAQY0QMYxwGYAwCIBgGQBgqSBwM0LjWgB-VL&sclient=gws-wiz-serp"
+                  target="_blank"
                   ><img src="../chapter11/img/slide-3.jpg" alt="slide3"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.google.co.kr/search?q=%EB%B9%84%ED%8F%AC%EC%84%A0%EB%9D%BC%EC%9D%B4%EC%A6%88&sca_esv=260407b5166ebe05&sxsrf=ACQVn08dcreD6KNqrETMzD3VuHMNqLLYuA%3A1714591978414&ei=6pgyZo7lGILX2roPgL6OiAI&udm=&gs_ssp=eJzj4tTP1TcwTklKjzdg9BJ6vbPlbf-aNy0LXs_d82buljfLOgDTABBW&oq=%EB%B9%84%ED%8F%AC%EC%84%A0&gs_lp=Egxnd3Mtd2l6LXNlcnAiCeu5hO2PrOyEoCoCCAAyCBAuGIAEGNQCMggQLhiABBjUAjIFEAAYgAQyBRAAGIAEMggQLhiABBjUAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMhcQLhiABBjUAhiXBRjcBBjeBBjgBNgBAUj1HVAAWIwVcAN4AZABAZgBiwGgAd8JqgEEMC4xMLgBA8gBAPgBAZgCCqACmQfCAgsQABiABBixAxiDAcICCBAuGIAEGLEDwgILEC4YgAQYsQMYgwHCAgQQABgDwgIFEC4YgATCAgcQLhiABBgKwgIIEAAYgAQYogSYAwC6BgYIARABGBSSBwMzLjegB8-CAQ&sclient=gws-wiz-serp"
+                  target="_blank"
                   ><img src="../chapter11/img/slide-4.jpg" alt="slide4"
                 /></a>
               </div>
@@ -163,16 +190,28 @@
               </div>
             </div>
           </div>
-          <iframe
-            src="../웹사이트메인화면과제/mainsection.html"
-            width="100%"
-            height="100%"
-            name="sectionIframe"
-            frameborder="0"
-          >
-          </iframe>
+          <div id="divIframe">
+            <iframe
+              src="../웹사이트메인화면과제/mainsection.html"
+              width="100%"
+              height="100%"
+              name="sectionIframe"
+              frameborder="0"
+            >
+            </iframe>
+          </div>
         </div>
       </section>
+      <!-- 어사이드 -->
+      <aside>
+        <div>
+          <i
+            id="uphide"
+            class="fa-solid fa-up-long"
+            onmouseover="disappear()"
+          ></i>
+        </div>
+      </aside>
       <!-- 푸터 -->
       <footer>
         <!-- 푸터 메인 div -->
@@ -183,7 +222,7 @@
               <a href="#"><b>다운로드</b></a>
               <a href="#"><b>개인정보처리방침</b> </a>
               <a href="#"><b>저작권지침및신고</b></a>
-              <a href="#"><b>이메일무단수집거부</b></a>
+              <a href="#" onclick="appear()"><b>이메일무단수집거부</b></a>
             </div>
           </div>
           <!-- 푸터 아랫 div -->

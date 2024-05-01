@@ -5,15 +5,15 @@ body{
   }
 #sectionDiv{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
 }
 #sectionDiv>img{
-    height: 280px;
+    height: 230px;
 }
 table{
-    width: 700px;
+    width: 100%;
     height: 400px;
     text-align: center;
     vertical-align: bottom;
@@ -42,7 +42,7 @@ td{
 }
 a{
     text-decoration: none;
-    color: rgb(129, 90, 5);
+    color: rgb(211, 153, 27);
 }
 a:hover{
     color: blueviolet;
@@ -52,8 +52,6 @@ a:hover{
     display: flex;
     justify-content: space-between;
     width: 40px;
-    position: relative;
-    left: 50px;
 }
 section{
     display: flex;
