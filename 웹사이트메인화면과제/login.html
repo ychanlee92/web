@@ -9,6 +9,7 @@
       form {
         margin: 0 470px 0 470px;
       }
+
       h2 {
         text-align: center;
         font-size: 35px;
@@ -16,11 +17,16 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: rgb(0, 0, 0);
       }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <h2>고사양에 오신 것을 환영합니다!</h2>
-    <form action="#" method="post">
+    <form action="/JSPStudy/LoginCheck" method="post">
       <fieldset>
         <legend style="text-align: center">로그인</legend>
         <div style="display: flex">
@@ -55,9 +61,8 @@
                 border-radius: 4px;
                 color: white;
               "
-              type="button"
+              type="submit"
               value="로그인"
-              onclick="loginCheck(event)"
             />
           </div>
         </div>
@@ -87,15 +92,17 @@
             border-radius: 3px;
           "
           >개인 정보 보호를 위해
-          <span style="color: red">개인 PC에서 사용해주세요.</span></span
-        >
+          <span style="color: red">개인 PC에서 사용해주세요.</span>
+        </span>
         <div style="margin-top: 10px">
           <input type="button" value="아이디 찾기" onclick="idSearch()" /><input
             type="button"
             value="비밀번호 찾기"
             style="margin: 0 3px"
             onclick="pwSearch()"
-          /><input
+          />
+          <button
+            type="button"
             style="
               background-color: gray;
               color: white;
@@ -105,7 +112,13 @@
             type="button"
             value="회원가입"
             onclick="window.scrollTo(0,0);"
-          />
+            href="/JSPStudy/member/signup.html"
+          >
+            <a href="/JSPStudy/member/signup.html">회원가입</a>
+          </button>
+          <button type="button" href="">
+            <a href="/JSPStudy/UserInfoPrint">회원리스트</a>
+          </button>
         </div>
       </fieldset>
     </form>
