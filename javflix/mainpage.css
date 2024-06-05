@@ -12,7 +12,7 @@ header{
   align-items: center;
 }
 nav{
-  height: 40px;
+  height: 50px;
   border-top: 1.5px solid rgb(216, 216, 216);
   border-bottom: 1.5px solid rgb(216, 216, 216);
   border-collapse: collapse;
@@ -20,14 +20,14 @@ nav{
   flex-direction: column;
   justify-content: center;
 }
-nav a{
+.boardA{
   color: rgb(78, 78, 78);
   border-left: 1px solid rgb(216, 216, 216);
   width: 132.5px;
   text-align: center;
   font-size: 14px;
 }
-a:hover{
+.boardA:hover{
   color: red;
 }
 #headerDiv{
@@ -49,23 +49,9 @@ a:hover{
   width: 1100px;
   justify-content: space-between;
 }
-.navA{
+#navA{
   border-right: 1px solid rgb(216, 216, 216);
 }
-/*
-#boardDiv{
-  position: absolute;
-  top: 160px;
-  left: 410px;
-  display: flex;
-  width: 1100px;
-  justify-content: space-between;
-}
-.boardDiv{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-} */
 #boardDiv {
   display: flex;
   flex-direction: column;
@@ -73,26 +59,44 @@ a:hover{
 #boardHide {
   display: none;
 }
-#boardA {
+#hideBoard{
   position: relative;
-  left: 37px;
-}
-.boardA {
-  position: relative;
-  top: 30px;
-  right: 1376px;
-  display: block;
+  top: 35px;
+  right: 1510px;
+  display: flex;
   width: 100vw;
   font-size: 13px;
-  background-color: antiquewhite;
+  background-color: white;
+  justify-content: center;
+  height: 125px;
+  align-items: center;
+  opacity: 0.9;
+} 
+#hideBoard>div{
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+} 
+.boardHide {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
 }
-#boardDiv:hover #boardHide {
+.boardHide>a{
+  width: 132.5px;
+  text-align: center;
+  font-size: 13px;
+  color: black;
+}
+.boardHide>a:hover{
+ color: red;
+}
+nav:hover #boardHide {
   display: block;
   z-index: 2;
   position: absolute;
-}
-#boardDiv:hover #boardAA {
-  color: blueviolet;
 }
 #nav {
   height: 40px;
@@ -103,8 +107,93 @@ a:hover{
   width: 1100px;
   margin: 0 auto;
 }
-#navRight {
+#sectionNav{
+  height: 450px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.prev>img{
+  height: 45px;
+}
+.next>img{
+  height: 45px;
+}
+#slideImg{
+  position: absolute;
+  width: 100%;
+}
+#slideImg>a{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#slideImg>a>img{
+  width: 100%;
+}
+#slideSide>a{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+#slideSide>a>img{
+  opacity: 0.5;
+}
+.prev{
+  margin-left: -800px;
+}
+.next{
+  margin-left: 800px;
+}
+#slideButton{
+  position: absolute;
+  left: 50%;
+  top: 92%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#slideButton>a{
+  height: 10px;
+  padding: 9px;
+}
+#slideButton>a>img{
+  height: 18px;
+}
+#slideButton>a.active .buttonImg{
+    filter: opacity(0.1) drop-shadow(0 0 0 black);
+}
+#board1:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board2:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board3:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board4:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board5:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board6:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board7:hover{
+  background-color: rgb(243, 241, 255);
+}
+#board8:hover{
+  background-color: rgb(243, 241, 255);
+}
+#nav{
+  width: 1500px;
   display: flex;
   justify-content: space-between;
-  width: 200px;
+}
+#loginImg{
+  height: 160px;
 }
